@@ -3,7 +3,7 @@
 <%
 	String url = "jdbc:mysql://localhost:3306/testbase";
 	String usr = "root";
-	String password = "courageliner";
+	String password = "xxxxxxxxxxxxxx";
 
 	try{
 		Class.forName("com.mysql.jdbc.Driver");

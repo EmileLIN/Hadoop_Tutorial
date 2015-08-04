@@ -13,7 +13,7 @@
 			//Connect the database
 			String url = "jdbc:mysql://localhost:3306/testbase";
 			String usr = "root";
-			String pass = "courageliner";
+			String pass = "xxxxxxxxxx";
 
 			try{
 				Class.forName("com.mysql.jdbc.Driver");
