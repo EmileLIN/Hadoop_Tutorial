@@ -1,0 +1,10 @@
+SET AUTOCOMMIT = 0;
+start transaction;
+
+INSERT INTO MyTable VALUES("1",15);
+ROLLBACK;
+
+INSERT INTO MyTable VALUES("1",25);
+COMMIT;
+
+
