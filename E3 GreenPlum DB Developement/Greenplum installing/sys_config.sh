@@ -30,3 +30,8 @@ echo "sda1 block size"
 echo "sda2 block size"
 /sbin/blockdev --getra /dev/sda2
 
+#close the firewall
+service iptables stop
+
+#start time sync service
+service ntpd start
