@@ -4,7 +4,7 @@
 public class  getConnect{
 
 	private static Connection conn = null;
-	private static Connenction conntomysql =null;
+	private static Connection conntomysql =null;
 
 	private getConnect()
 	{
@@ -14,7 +14,7 @@ public class  getConnect{
 
 	//Connect Hive
 	public static Connection getHiveConn() throws SQLException{
-		if(conn =null)
+		if(conn ==null)
 		{
 			try{
 				Class.forName("org.apache.hadoop.hive.jdbc.HiveDriver"); // Define what drive to use
@@ -24,7 +24,7 @@ public class  getConnect{
 			}
 		
 			//Hive server's default port is 10000
-			conn = DriveManager.getConnection("jdbc:hive://master:10000/default","","");  // Host-port, user, password
+			conn = DriverManager.getConnection("jdbc:hive://master:10000/default","","");  // Host-port, user, password
 		}
 		return conn;
 	}
@@ -43,7 +43,7 @@ public class  getConnect{
 			conn = DriverManager.getConnection("jdbc:mysql://archer:3306/hive?useUnicode=true&characterEncoding=GBK","hadoop","12345678");
 
 		}
-		return connmysql;
+		return conntomysql;
 
 	}
 
