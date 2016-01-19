@@ -1,8 +1,15 @@
+package com.cstore.transToHive;
 
-// Use singleton pattern
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
-public class  getConnect{
 
+
+
+
+
+public class getConnect {
 	private static Connection conn = null;
 	private static Connection conntomysql =null;
 
@@ -24,7 +31,7 @@ public class  getConnect{
 			}
 		
 			//Hive server's default port is 10000
-			conn = DriverManager.getConnection("jdbc:hive://master:10000/default","","");  // Host-port, user, password
+			conn = DriverManager.getConnection("jdbc:hive://192.168.136.104:10000/default", "", "");// Host-port, user, password
 		}
 		return conn;
 	}
@@ -40,7 +47,7 @@ public class  getConnect{
 				System.exit(1);
 			}
 
-			conn = DriverManager.getConnection("jdbc:mysql://archer:3306/hive?useUnicode=true&characterEncoding=GBK","hadoop","12345678");
+			conntomysql = DriverManager.getConnection("jdbc:mysql://192.168.136.105:3306/hive?useUnicode=true&characterEncoding=GBK&useSSL=false","hadoop","12345678");
 
 		}
 		return conntomysql;
@@ -49,7 +56,7 @@ public class  getConnect{
 
 	//close sessions 
 
-	public static void clostHive() throws SQLException{
+	public static void closeHive() throws SQLException{
 		if(conn != null)
 		{
 			conn.close();
@@ -62,5 +69,4 @@ public class  getConnect{
 			conntomysql.close();
 		}
 	}
-
 }
