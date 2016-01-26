@@ -1,0 +1,3 @@
+2016-01-18 00:30:26 ERROR org.apache.hadoop.hdfs.server.datanode.Datanode Finished asynchronous block
+2016-01-18 00:33:55 INFO org.apache.hadoop.hdfs.server.datanode.Datanode Blockport of 9 blocks took
+2016-01-18 01:22:25 ERROR org.apache.hadoop.hdfs.server.datanode.Datanode DatanodeCommand action DNA_REGISTER
