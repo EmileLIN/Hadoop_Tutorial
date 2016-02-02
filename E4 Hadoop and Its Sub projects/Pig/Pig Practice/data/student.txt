@@ -1,0 +1,8 @@
+20100101:Emile:M:24:Data Mining
+20100102:Jack:M:23:Computer Science
+20100103:Carla:F:24:Data Mining
+20100104:Yannick:M:22:Financing
+20100105:Shith:M:23:Computer Science
+20100106:Sherry:F:23:Musical 
+20100107:Jue:M:23:Painting Art
+20100108:Luke:M:23:Architecture

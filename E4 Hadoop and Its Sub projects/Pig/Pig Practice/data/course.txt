@@ -1,0 +1,8 @@
+01,English,,4
+02,Data Structure,05,2
+03,Database,02,2
+04,DB Design,03,3
+05,C Language,,3
+06,Principe of Network,07,3
+07,Operating System,05,3
+
